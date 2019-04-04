@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RecordsComponent } from './records/records.component'
 import { RecordDetailComponent } from './record-detail/record-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -15,7 +16,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         RecordsComponent,
-        RecordDetailComponent
+        RecordDetailComponent,
+        MessagesComponent
       ],
     }).compileComponents();
   }));
