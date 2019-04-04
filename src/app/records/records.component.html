@@ -1,0 +1,9 @@
+<h2>My Records</h2>
+<app-record-detail [record]="selectedRecord"></app-record-detail>
+<ul class="records">
+  <li *ngFor="let record of records"
+      [class.selected]="record === selectedRecord"
+      (click)="onSelect(record)">
+    <span class="badge">{{record.id}}</span><b>TITLE:</b> {{record.title}} <b>ARTIST:</b> {{record.artist}}
+  </li>
+</ul>

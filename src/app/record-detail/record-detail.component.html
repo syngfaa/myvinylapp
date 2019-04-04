@@ -1,0 +1,14 @@
+<div *ngIf="record">
+  <h3>{{record.title | uppercase}} Details</h3>
+  <div><span>id: </span>{{record.id}}</div>
+  <div>
+    <label>title:
+      <input [(ngModel)]="record.title" placeholder="title"/>
+    </label>
+  </div>
+  <div>
+    <label>artist:
+      <input [(ngModel)]="record.artist" placeholder="artist"/>
+    </label>
+  </div>
+</div>
