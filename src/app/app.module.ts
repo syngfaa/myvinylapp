@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RecordsComponent } from './records/Records.component';
+import { RecordsComponent } from './records/records.component';
 import { RecordDetailComponent } from './record-detail/record-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 
