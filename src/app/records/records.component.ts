@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RECORDS } from '../mock-records';
+import { RecordService } from '../record.service';
 import { Record } from '../record';
 
 @Component({
@@ -8,11 +8,20 @@ import { Record } from '../record';
   styleUrls: ['./records.component.css']
 })
 export class RecordsComponent implements OnInit {
-  records = RECORDS;
+
+  records: Record[];
+
   selectedRecord: Record;
-  constructor() { }
+
+  getRecords(): void {
+      this.recordService.getRecords()
+      .subscribe(records => this.records = records);
+  }
+  constructor(private recordService: RecordService) { 
+  }
 
   ngOnInit() {
+    this.getRecords();
   }
 
   onSelect(record: Record): void {
