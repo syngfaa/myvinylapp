@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RecordsComponent } from './records/Records.component';
+import { RecordsComponent } from './records/records.component';
 
 const routes: Routes = [
   { path: 'records', component: RecordsComponent }
