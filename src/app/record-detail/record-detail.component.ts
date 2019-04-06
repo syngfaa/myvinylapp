@@ -29,4 +29,7 @@ export class RecordDetailComponent implements OnInit {
       .subscribe(record => this.record = record);
   }
 
+  goBack(): void {
+    this.location.back();
+  }
 }

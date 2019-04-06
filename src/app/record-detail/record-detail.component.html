@@ -1,4 +1,5 @@
 <div *ngIf="record">
+  <button (click)="goBack()">go back</button>
   <h3>{{record.title | uppercase}} Details</h3>
   <div><span>id: </span>{{record.id}}</div>
   <div>
