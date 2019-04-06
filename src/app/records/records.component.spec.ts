@@ -3,6 +3,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RecordsComponent } from './records.component';
 import { RecordDetailComponent } from '../record-detail/record-detail.component';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from '../app-routing.module';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 describe('RecordComponentComponent', () => {
   let component: RecordsComponent;
@@ -10,8 +12,8 @@ describe('RecordComponentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ FormsModule ],
-      declarations: [ RecordsComponent, RecordDetailComponent ]
+      imports: [ FormsModule, AppRoutingModule ],
+      declarations: [ RecordsComponent, RecordDetailComponent, DashboardComponent ]
     })
     .compileComponents();
   }));
