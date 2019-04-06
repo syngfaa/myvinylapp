@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { RecordsComponent } from './records/Records.component';
 import { RecordDetailComponent } from './record-detail/record-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { MessagesComponent } from './messages/messages.component';
     RecordsComponent,
     RecordDetailComponent,
     MessagesComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
