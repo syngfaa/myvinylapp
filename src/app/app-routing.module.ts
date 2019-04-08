@@ -8,12 +8,14 @@ import { RecordsComponent } from './records/records.component';
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'detail/:id', component: RecordDetailComponent},
-  { path: 'records', component: RecordsComponent }
+  { path: 'records', component: RecordsComponent,  
+  children: [
+    {path: 'detail/:id', component: RecordDetailComponent}
+  ]}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
