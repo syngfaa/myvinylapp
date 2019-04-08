@@ -17,7 +17,7 @@ export class RecordService {
 
   getRecord(id: number): Observable<Record >{
       // TODO: send the message _after_ fetching the hero
-    this.messageService.add('RecordService: fetched record id={id}');
+    this.messageService.add(`RecordService: fetched record id=${id}`);
     return of (RECORDS.find(record => record.id === id));
   }
   constructor(private messageService: MessageService) { }
